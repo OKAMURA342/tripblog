@@ -14,9 +14,9 @@
 <body class="body">
 <div class="back"></div>
 <div>
- <div class="circle"><img src="{{Storage::url('/images/trip3.png')}}" width="140px"></div>
+ <div class="circle"><img src="{{Storage::url('/images/human2.png')}}" width="140px"></div>
   </div>
-  <div class="blog" style="width: 561px;">
+  <div class="blog2" style="width: 561px;">
       <div class="container">
                 <h3>退会の確認</h3>
                  <p>退会をすると投稿も全て削除されます。</p>

@@ -19,7 +19,7 @@ class TripController extends Controller
              {
                $trip = Trip::whereHas('User',function($q){
                 $q->where('deleted_at', null);
-               })->paginate(6);
+               })->latest()->paginate(6);
                return view('trip', ['trips' => $trip]);
              }
 
@@ -65,6 +65,7 @@ class TripController extends Controller
     public function comment(Request $request)
            {
              $trip= Trip::find($request->id);
+             $comment = $trip->comments;
              return view('blog', ['trip' => $trip]);
            }
     //編集ページ
@@ -128,8 +129,8 @@ class TripController extends Controller
               $keyword_contents=$request->search;
               $query = Trip::query();
               $trip = $query->where('title','like', '%' .$keyword_title. '%',)
-              ->orWhere('contents', 'like','%' .$keyword_contents. '%' )->paginate(6);
-              return view('trip',['trips'=> $trip]);
+              ->orWhere('contents', 'like','%' .$keyword_contents. '%' )->latest()->paginate(6);
+              return view('trip',['trips'=> $trip, 'keyword_title'=>$keyword_title]);
            }
 
     //いいね機能
@@ -182,4 +183,23 @@ class TripController extends Controller
               Auth::logout();
               return redirect(route('login'));
             }
+  //mypage検索     
+   public function search_mypage(Request $request) 
+   {
+      $keyword_title= $request->search;
+      $keyword_contents=$request->search;
+      // $query = Trip::query();
+      // $trip = $query->where('title','like', '%' .$keyword_title. '%',)
+      // ->orWhere('contents', 'like','%' .$keyword_contents. '%' )
+      // ->where('user_id', Auth::id())
+      // ->paginate(6);
+      $i=Auth::id();
+      $trip = Trip::where('user_id',$i)
+      ->where(function($query) use($keyword_title){
+        $query->orWhere('title','like', '%' .$keyword_title. '%')
+        ->orWhere('contents', 'like','%' .$keyword_title. '%' );
+      })->latest()->get();
+      return view('/mypage',['trips'=> $trip, 'keyword_title'=>$keyword_title]);
+   }
+
 }

@@ -21,10 +21,7 @@ const fileSelect = {
         // ファイルアップロード
         uploadFile(n) {
             // 先に存在していれば画像要素を削除する
-            let target = document.getElementById("pics" + n);
-            if (target) {
-                document.getElementById("pics" + n).remove();
-            };
+
             // 読み込まれるファイルの情報を取得
             const file = this.ref[n].files[0];
             // 読み込んだファイルをHTMLの要素にセットする
@@ -36,6 +33,12 @@ const fileSelect = {
             this.file[n] = null;
             this.ref[n].value = "";
         },
+        deleteFileAlready(n) {
+            let target = document.getElementById("pics" + n + "_");
+            target.remove();
+            target = document.getElementById("pics" + n + "_b");
+            target.remove();
+        }
     }
 }
 Vue.createApp(fileSelect).mount('#app');

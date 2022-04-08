@@ -32,8 +32,7 @@ Route::get('/mypage','TripController@mypage')->middleware('auth');
 Route::post('/remove','TripController@remove');
 //検索
 Route::post('/search','TripController@search');
-Route::get('/search','TripController@search')->middleware('auth');
-//いいね機能
+Route::get('/search','TripController@search');
 Route::get('/good','TripController@good')->middleware('auth');;
 //コメント
 Route::post('/articles','TripController@articles');
@@ -42,3 +41,6 @@ Route::post('/comments', 'TripController@destroy');
 Route::get('/users.delete_confirm','TripController@delete_confirm')->middleware('auth');
 //退会
 Route::post('/users_delete', 'TripController@users_destroy');
+//mypage検索
+Route::post('/search_mypage','TripController@search_mypage');
+Route::get('/search_mypage','TripController@search_mypage')->middleware('auth');

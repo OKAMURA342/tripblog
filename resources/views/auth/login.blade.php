@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-    <div><img style="width: 380px;"  src="{{Storage::url('/images/trip3.png')}}" width="140px"></div>
+    <div><img style="width: 380px;" src="{{Storage::url('/images/human2.png')}}" width="140px"></div>
         <div style="transform: translate(100px);" class="col-md-8">
             <div>
                 <p style="margin-left:303px;font-size:40px;">Let's travel!</p>

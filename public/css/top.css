@@ -1,324 +1,385 @@
-.body {
-    height: 100%;
-}
-
-.blog {
-    background-color: #ffffff;
-    padding: 50px 50px;
-    text-align: center;
-    height: 50%;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.back {
-    position: fixed;
-    width: 100%;
-    z-index: -1;
-    height: 100%;
-    background-size: cover;
-    background-image: url(../storage/images/trip.png);
-    background-position: left top;
-}
-
-.side {
-    background-color: #a5caf2;
-    width: 15%;
-    min-height: 100%;
-    text-align: center;
-}
-
-.button {
-    margin: 1em 0;
-    border-radius: 26px;
-    width: 57px;
-    color: #364e96;
-    border: solid 3px #364e96;
-}
-
-.card {
-    width: 15rem;
-    height: 390px;
-}
-
-article {
-    display: flex;
-    min-height: 100%;
-}
-
-.gard {
-    display: grid;
-    gap: 26px;
-    width: 85%;
-    margin-top: 6%;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 30px;
-}
-
-.html {
-    height: 100%;
-}
-
-.btn {
-    height: 50px;
-}
-
-.logout {
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-    z-index: 100;
-    border: solid 2px #9bacde;
-    background-color: #20ff5b00;
-    border-radius: 26px;
-}
-
-.text {
-    width: auto;
-}
-
-.ul {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.contents {
-    text-align: left;
-}
-
-.title {
-    text-align: left;
-    font-size: 2rem;
-    margin-top: 15px;
-}
-
-.login {
-    display: inline-block;
-    position: absolute;
-    right: 46px;
-    border: solid 2px #d8ebff;
-    background-color: #20ff5b00;
-    border-radius: 26px;
-}
-
-.sign_up {
-    right: 60px;
-    display: inline-block;
-    position: absolute;
-    right: 5px;
-    z-index: 100;
-    border: solid 2px #19ab0f;
-    background-color: #20ff5b00;
-    border-radius: 26px;
-}
-
-.outside {
-    background-color: #a5caf2;
-    width: 15%;
-    min-height: 100%;
-    text-align: center;
-}
-
-.nav {
-    left: 0;
-    background-color: #a5caf2;
-    width: 227px;
-    transition: transform 0.3s ease-out;
-    transform: translateX(-300px);
-}
-
-.paginate {
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
-}
-
-.open {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    z-index: 10;
-}
-
-.show {
-    transform: translateX(0px);
-}
-
-table {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.login {
-    z-index: 100;
-}
-
-.search {
-    width: 400px;
-}
-
-.circle {
-    width: 202px;
-    height: 206px;
-    background-color: rgb(250, 250, 250);
-    border-radius: 50%;
-    margin: 0 auto;
-    /* ←円を中央揃え */
-    text-align: center;
-    /* ←文字を左右に中央揃え */
-    line-height: 200px;
-    /* ←文字を上下に中央揃え */
-}
-
-.img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.main {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    width: 871px;
-}
-
-.sub {
-    width: 400px;
-    height: 300px;
-}
-
-.line {
-    display: flex;
-    flex-direction: column;
-}
-
-.display {
-    display: flex;
-}
-
-.text {
-    border-radius: 10px;
-    width: 100%;
-}
-
-a.btn_07 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    border: 1px solid #228bc8;
-    box-sizing: border-box;
-    width: 178px;
-    height: 44px;
-    padding: 0 25px;
-    color: #228bc8;
-    font-size: 16px;
-    text-align: left;
-    text-decoration: none;
-    position: relative;
-    transition-duration: 0.2s;
-}
-
-a.btn_07:hover {
-    background: #228bc8;
-    border: 1px solid #05639a;
-    color: #fff;
-}
-
-a.btn_07:before {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 40px 50px;
-    border-color: transparent transparent #228bc8 transparent;
-}
-
-a.btn_07 span {
-    position: absolute;
-    bottom: 12px;
-    right: 20px;
-    display: inline-block;
-}
-
-a.btn_07 span:before {
-    content: '';
-    width: 16px;
-    height: 16px;
-    background: #ffffff;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    margin-top: -8px;
-}
-
-a.btn_07 span:after {
-    content: '';
-    width: 6px;
-    height: 6px;
-    border: 0;
-    border-top: 2px solid #228bc8;
-    border-right: 2px solid #228bc8;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 50%;
-    left: 4px;
-    margin-top: -3px;
-}
-
-.image {
-    display: flex;
-}
-
-.form {
-    display: flex;
-}
-
-.size {
-    width: 535px;
-    object-fit: cover;
-}
-
-.h1 {
-    color: #364e96;
-    /*文字色*/
-    border: solid 3px #364e96;
-    /*線色*/
-    padding: 0.5em;
-    /*文字周りの余白*/
-    border-radius: 0.5em;
-    /*角丸*/
-}
-
-.color {
-    background-color: rgb(250, 250, 250);
-}
-
-.dropdown {
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-    z-index: 100;
-}
-
-.background {
-    position: fixed;
-    width: 50vw;
-    height: 100vh;
-    background-color: #1e0db6;
-    left: 50vw;
-}
-
-.card-date {
-    position: absolute;
-    bottom: 0px;
-    right: 10px;
-}
+                    .body {
+                        height: 100%;
+                    }
+                    
+                    .blog {
+                        background-color: #ffffff;
+                        padding: 50px 50px;
+                        text-align: center;
+                        height: 50%;
+                        margin-top: 30px;
+                        margin-left: 80px;
+                        margin-right: 80px;
+                    }
+                    
+                    .back {
+                        position: fixed;
+                        width: 100%;
+                        z-index: -1;
+                        height: 100%;
+                        background-size: cover;
+                        background-image: url(../storage/images/trip.png);
+                        background-position: left top;
+                    }
+                    
+                    .side {
+                        background-color: #a5caf2;
+                        width: 18%;
+                        min-height: 100%;
+                        text-align: center;
+                    }
+                    
+                    .button {
+                        margin: 1em 0;
+                        border-radius: 26px;
+                        width: 57px;
+                        color: #364e96;
+                        border: solid 3px #364e96;
+                    }
+                    
+                    .card {
+                        width: 15rem;
+                        height: 390px;
+                        overflow: hidden;
+                    }
+                    
+                    article {
+                        display: flex;
+                        min-height: 100%;
+                    }
+                    
+                    .gard {
+                        display: grid;
+                        gap: 26px;
+                        width: 85%;
+                        margin-top: 6%;
+                        grid-template-columns: repeat(3, 1fr);
+                        padding: 0 109px;
+                        ;
+                    }
+                    
+                    .html {
+                        height: 100%;
+                    }
+                    
+                    .btn {
+                        height: 50px;
+                    }
+                    
+                    .logout {
+                        display: inline-block;
+                        position: absolute;
+                        right: 10px;
+                        z-index: 100;
+                        border: solid 2px #9bacde;
+                        background-color: #20ff5b00;
+                        border-radius: 26px;
+                    }
+                    
+                    .text {
+                        width: auto;
+                    }
+                    
+                    .ul {
+                        position: absolute;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    
+                    .contents {
+                        text-align: left;
+                    }
+                    
+                    .title {
+                        text-align: left;
+                        font-size: 2rem;
+                        margin-top: 15px;
+                    }
+                    
+                    .login {
+                        display: inline-block;
+                        position: absolute;
+                        right: 46px;
+                        border: solid 2px #d8ebff;
+                        background-color: #20ff5b00;
+                        border-radius: 26px;
+                    }
+                    
+                    .sign_up {
+                        right: 60px;
+                        display: inline-block;
+                        position: absolute;
+                        right: 5px;
+                        z-index: 100;
+                        border: solid 2px #19ab0f;
+                        background-color: #20ff5b00;
+                        border-radius: 26px;
+                    }
+                    
+                    .outside {
+                        background-color: #a5caf2;
+                        width: 17%;
+                        min-height: 100%;
+                        text-align: center;
+                    }
+                    
+                    .nav {
+                        left: 0;
+                        background-color: #a5caf2;
+                        width: 227px;
+                        transition: transform 0.3s ease-out;
+                        transform: translateX(-300px);
+                    }
+                    
+                    .paginate {
+                        position: fixed;
+                        right: 15px;
+                        bottom: 15px;
+                    }
+                    
+                    .open {
+                        position: fixed;
+                        width: 50px;
+                        height: 50px;
+                        z-index: 10;
+                    }
+                    
+                    .show {
+                        transform: translateX(0px);
+                    }
+                    
+                    table {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    
+                    .login {
+                        z-index: 100;
+                    }
+                    
+                    .search {
+                        width: 400px;
+                    }
+                    
+                    .circle {
+                        margin-top: 5px;
+                        width: 191px;
+                        height: 206px;
+                        background-color: rgb(250, 250, 250);
+                        border-radius: 50%;
+                        margin: 0 auto;
+                        /* ←円を中央揃え */
+                        text-align: center;
+                        /* ←文字を左右に中央揃え */
+                        line-height: 200px;
+                        /* ←文字を上下に中央揃え */
+                    }
+                    
+                    .img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    
+                    .main {
+                        justify-content: center;
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 871px;
+                    }
+                    
+                    .sub {
+                        width: 400px;
+                        height: 300px;
+                    }
+                    
+                    .line {
+                        display: flex;
+                    }
+                    
+                    .display {
+                        display: flex;
+                    }
+                    
+                    .text {
+                        border-radius: 10px;
+                        width: 100%;
+                    }
+                    
+                    a.btn_07 {
+                        margin-top: 10px;
+                        margin-left: 22px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: #fff;
+                        border: 1px solid #228bc8;
+                        box-sizing: border-box;
+                        width: 178px;
+                        height: 44px;
+                        padding: 0 25px;
+                        color: #228bc8;
+                        font-size: 16px;
+                        text-align: left;
+                        text-decoration: none;
+                        position: relative;
+                        transition-duration: 0.2s;
+                    }
+                    
+                    a.btn_07:hover {
+                        background: #228bc8;
+                        border: 1px solid #05639a;
+                        color: #fff;
+                    }
+                    
+                    a.btn_07:before {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 0 40px 50px;
+                        border-color: transparent transparent #228bc8 transparent;
+                    }
+                    
+                    a.btn_07 span {
+                        position: absolute;
+                        bottom: 12px;
+                        right: 20px;
+                        display: inline-block;
+                    }
+                    
+                    a.btn_07 span:before {
+                        content: '';
+                        width: 16px;
+                        height: 16px;
+                        background: #ffffff;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        margin-top: -8px;
+                    }
+                    
+                    a.btn_07 span:after {
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        border: 0;
+                        border-top: 2px solid #228bc8;
+                        border-right: 2px solid #228bc8;
+                        transform: rotate(45deg);
+                        position: absolute;
+                        top: 50%;
+                        left: 4px;
+                        margin-top: -3px;
+                    }
+                    
+                    .image {
+                        display: flex;
+                    }
+                    
+                    .size {
+                        width: 150px;
+                        height: 75px;
+                        position: absolute;
+                        object-fit: cover;
+                        top: 0;
+                    }
+                    
+                    .h1 {
+                        color: #364e96;
+                        /*文字色*/
+                        border: solid 3px #364e96;
+                        /*線色*/
+                        padding: 0.5em;
+                        /*文字周りの余白*/
+                        border-radius: 0.5em;
+                        /*角丸*/
+                    }
+                    
+                    .color {
+                        background-color: rgb(250, 250, 250);
+                    }
+                    
+                    .dropdown {
+                        display: inline-block;
+                        position: absolute;
+                        right: 10px;
+                        z-index: 100;
+                    }
+                    
+                    .background {
+                        position: fixed;
+                        width: 50vw;
+                        height: 100vh;
+                        left: 50vw;
+                    }
+                    
+                    .card-date {
+                        position: absolute;
+                        bottom: 0px;
+                        right: 10px;
+                        margin-bottom: 0;
+                        padding-bottom: 13px;
+                        width: 100%;
+                        text-align: right;
+                        background-color: white;
+                    }
+                    
+                    .users {
+                        display: inline-block;
+                        position: absolute;
+                        right: 128px;
+                        z-index: 100;
+                    }
+                    
+                    a.btn--orange.btn--border-solid {
+                        border: 2px solid #213898;
+                        margin-top: 18px;
+                        background-color: #c3dbf4;
+                        width: 190px;
+                    }
+                    
+                    .bottun-style {
+                        position: absolute;
+                        top: 0;
+                        right: 5px;
+                        border-radius: 41px;
+                        background-color: #c4e9f7;
+                    }
+                    
+                    .label {
+                        margin-bottom: 0;
+                    }
+                    
+                    .blog2 {
+                        background-color: #ffffff;
+                        padding: 50px 50px;
+                        text-align: center;
+                        height: 50%;
+                        margin-top: 30px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    
+                    .size2 {
+                        width: 150px;
+                        height: 75px;
+                        position: absolute;
+                        object-fit: cover;
+                        top: 0;
+                        left: 0;
+                    }
+                    
+                    .lost {
+                        height: 52px;
+                        margin-left: 20px;
+                        color: #F44336;
+                        font-size: 18px;
+                        width: 100%;
+                        margin-left: 214px;
+                    }
