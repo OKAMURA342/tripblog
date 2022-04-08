@@ -22,9 +22,9 @@
                  <p>退会をすると投稿も全て削除されます。</p>
                  <p>それでも退会をしますか？</p>
             <form  method="post" action="/users_delete" >
-            @csrf
-              <input type="hidden" name="id" value="{{Auth::id()}}">
-              <button class="btn btn-primary" type="submit">退会</button> 
+                @csrf
+                  <input type="hidden" name="id" value="{{Auth::id()}}">
+                  <button class="btn btn-primary" type="submit">退会</button> 
             </form>
             <a href="/">戻る</a>
       </div>
@@ -32,7 +32,3 @@
 </body>
 </html>
 
-    </div>
-
-    </div>
-</div>

@@ -83,7 +83,6 @@
         </form>
       </ul>
         <div class="gard">
-       
             <?php
               $count = count($trips);
             ?>
@@ -91,14 +90,14 @@
               <p  class="lost">該当するものがありませんでした</p>
             @endif
             @foreach ($trips as $trip)
-            <container>
-            <div class="card" >
-            @for ($i = 1; $i <= 4; $i++)
-            @if($trip['pics'.$i] != "")
-              <img src='{{Storage::url( $trip["pics".$i])}}' width="239px">
-              @break
-            @endif
-            @endfor
+                <container>
+              <div class="card" >
+                @for ($i = 1; $i <= 4; $i++)
+                  @if($trip['pics'.$i] != "")
+                    <img src='{{Storage::url( $trip["pics".$i])}}' width="239px">
+                    @break
+                  @endif
+                @endfor
                 <div class="card-body">
                   <h5 class="card-title"><a href="/blog?id={{$trip->id}}">{{ $trip->title }}</a></h5>
                   <p class="card-text" >{!!nl2br(e($trip['contents']))!!}</p>
