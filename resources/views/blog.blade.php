@@ -18,8 +18,8 @@
             @endauth
         <div class="back"></div>
         <article>
-            <div class="side" style="width:200%;">
-                <div class="circle"><img src="{{Storage::url('/images/human2.png')}}" width="140px"></div>
+            <div class="side" style="width:40%;">
+                <div class="circle" ><img src="{{Storage::url('/images/human2.png')}}" width="140px"></div>
                 <a  class="btn_07"  href="/" >一覧に戻る<span></span></a>
             </div>
             <div class="blog">
